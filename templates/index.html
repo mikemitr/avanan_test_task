@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+    <form method="post">
+        User id: <input type="text" name="user_id" value="" placeholder="281848">
+        <input type="submit" value="Get posts">
+    </form>
+    <br/>
+    <br/>
+    <form method="post" action="/own_posts">
+        <input type="submit" value="Get MY posts">
+    </form>
+
+    {% include 'posts.html' %}
+
+</body>
+</html>
